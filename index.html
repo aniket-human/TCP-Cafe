@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <title>The Central Perk</title>
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit&family=Nunito+Sans:wght@200&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="home">
+    <section id="home">
         <h1 class="headline">The Central Perk</h1>
         <div class="container">
             <div class="logo">
@@ -30,30 +34,38 @@
                 </p>
                 <p id="mobile_about">Welcome to a place where every meal is a delight and
                     every occasion is celebrated with warmth.</p>
-                <a class="map" href="https://maps.app.goo.gl/WcoyRKR1WsGSf6TG7" target="_blank">
-                    <button>Get Directions</button>
+            </div>
+        </div>
+    </section>
+    <section id="service_section">
+        <h1>Our Services</h1>
+        <div class="services">
+            <div class="service_box">
+                <img src="./media/dining_icon.png" alt="">
+                <h2>Dining</h2>
+                <p>Best dining in area for gatherings. Enjoy comfy stay while enjoying delecious food.</p>
+                <a href="https://maps.app.goo.gl/WcoyRKR1WsGSf6TG7" target="_blank">
+                    <button class="button">Get Directions</button>
+                </a>
+            </div>
+            <div class="service_box">
+                <img src="./media/menu_icon.png" alt="">
+                <h2>Menu</h2>
+                <p>We have wide range of snacks, continental, chineese, drinks and many more with amazing taste.</p>
+                <a href="https://maps.app.goo.gl/WcoyRKR1WsGSf6TG7" target="_blank">
+                    <button class="button">Browse Menu</button>
+                </a>
+            </div>
+            <div class="service_box">
+                <img src="./media/delivery_icons.png" alt="">
+                <h2>Delivery</h2>
+                <p>Lazy to get food? Get your food at your door step without hustle from Zomato and Swiggy.</p>
+                <a href="https://maps.app.goo.gl/WcoyRKR1WsGSf6TG7" target="_blank">
+                    <button class="button">Order Now</button>
                 </a>
             </div>
         </div>
-    </div>
-    <!-- <script>
-        const text = document.querySelector(".typing-text");
-        
-        const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "Best Food!";
-            }, 0);
-            setTimeout(() => {
-                text.textContent = "Great Service!";
-            }, 4000);
-            setTimeout(() => {
-                text.textContent = "Cool Dining!";
-            }, 8000);
-        }
-
-        textLoad()
-        setInterval(textLoad, 12000)
-    </script> -->
+    </section>
     <script src="script.js"></script>
 </body>
 
