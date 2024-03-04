@@ -122,7 +122,9 @@ button:hover {
     .typing-text{
         font-size: 5vh;
         color: crimson;
+        /* animation: blink 1s infinite; */
     }
+
     
     #pc_about {
         display: none;
