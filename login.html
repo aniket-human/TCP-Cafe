@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="login-container">
+            <h1>Login I Only for Employees</h1>
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #dadada;
+            /* Red background color */
+        }
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            width: 30vw;
+            margin: 100px auto;
+            box-shadow: 10px 10px 12px;
+            /* Box shadow for 3D effect */
+        }
+
+        .login-container h1 {
+            margin-bottom: 3vh;
+            color: crimson;
+            /* Red text color */
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: crimson;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .login-container {
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 7vw;
+                /* height: 50vh; */
+                width: 60vw;
+                margin: 100px auto;
+                box-shadow: 12px 12px 14px ;
+            }
+        }
+    </style>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Check if the username and password are correct
+            if (username === 'user' && password === 'pass') {
+                window.location.href = 'orders.html'; // Redirect to todo list page
+            } else {
+                alert('Invalid username or password');
+            }
+        });
+    </script>
+</body>
+
+</html>
